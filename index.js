@@ -1,13 +1,12 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
-app.use(cors());
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 const user_id = process.env.USER_ID;
 const email = process.env.EMAIL;
 const roll_number = process.env.ROLL_NUMBER;
